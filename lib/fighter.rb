@@ -8,10 +8,6 @@ class Fighter
     @hp = hp
   end
 
-  def attack opponent
-    opponent.receive_damage
-  end
-
   def receive_damage
     @hp -= 2
   end

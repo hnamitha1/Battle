@@ -12,12 +12,7 @@ describe Fighter do
     expect(slasher.hp).to eq Fighter::DEFAULT_HP
   end
 
-  it "takes damage" do
-    expect(mittens).to receive(:receive_damage)
-    slasher.attack(mittens)
-  end
-
   it "reduces HP when taking damage" do
-    expect{slasher.attack(mittens)}.to change { mittens.hp }.by(-2)
+    expect{slasher.receive_damage}.to change { slasher.hp }.by(-2)
   end
 end

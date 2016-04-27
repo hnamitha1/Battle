@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/fighter'
+require './lib/game'
 
 class Battle < Sinatra::Base
 
@@ -17,7 +18,8 @@ class Battle < Sinatra::Base
 
   post '/attacking' do
     @player_1_hp = $player_1.hp
-    @player_2_hp = $player_1.attack($player_2)
+    Game.new.attack($player_2)
+    @player_2_hp = $player_2.hp
     redirect '/attack'
   end
 

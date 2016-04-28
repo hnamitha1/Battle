@@ -1,2 +1,4 @@
-<p%><%= @player_1_name %> attacks <%= @player_2_name %></p>
-<p>Poor <%= @player_2_name %> now only has <%= @player_2_hp %> Hit Points</p>
+<p%><%= @game.player1.name%> attacks <%= @game.player2.name %></p>
+<p>Poor <%= @game.player2.name%> now only has <%= @game.player2.hp %> Hit Points</p>
+
+<a href="/play">Back</a>

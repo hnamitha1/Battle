@@ -10,4 +10,7 @@ describe Game do
     game.attack(mittens)
   end
 
+  it 'changes turns' do
+  	expect{ game.change_active_player }.to change{ game.active_player }
+  end
 end

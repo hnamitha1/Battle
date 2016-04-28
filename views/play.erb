@@ -1,1 +1,12 @@
-<%= @player_1_name %> vs. <%= @player_2_name %>
+
+<center>
+<h1><%= @player_1_name %> vs. <%= @player_2_name %></h1>
+</center>
+
+<%= @player_1_name %>: <%= @player_1_hp %> Hit Points
+<%= @player_2_name %>: <%= @player_2_hp %> Hit Points
+
+
+<form action="/attacking" method="post">
+  <input type="submit" value="Scratch">
+</form>

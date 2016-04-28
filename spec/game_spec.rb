@@ -1,7 +1,7 @@
 require 'game'
 
 describe Game do
-	let(:slasher) {double :slasher}
+	let(:slasher) {double :slasher, hp:0}
 	let(:mittens) {double :mittens}
 	subject(:game) {described_class.new(slasher,mittens)}
 
@@ -17,4 +17,8 @@ describe Game do
   it 'returns the inactive player' do
   	expect(game.inactive_player).to eq mittens
 	end
+
+  it 'game over returns true' do
+    expect(game.game_over?).to eq true
+  end
 end

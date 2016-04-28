@@ -19,6 +19,13 @@ class Game
   	player1? ? @player2 : @player1
   end
 
+  def game_over?
+  	player = active_player 
+  		if player.hp <=0
+  			true
+  		end
+  end
+
   private
 
   	def player1?

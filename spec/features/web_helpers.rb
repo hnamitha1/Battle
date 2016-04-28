@@ -22,3 +22,51 @@ def sign_in_and_play_and_attack_player1
 		click_link('Back')
 		click_button('Scratch')
 end
+
+def attack_player
+    sign_in_and_play
+        click_button 'Scratch'
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        click_link('Back')
+        click_button('Scratch')
+        
+        
+
+        
+
+
+    
+end

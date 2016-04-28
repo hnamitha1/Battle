@@ -1,4 +1,8 @@
+<% if @game.game_over? != true %>
 <p%><%= @game.inactive_player.name %> attacks <%= @game.active_player.name %></p>
 <p>Poor <%= @game.active_player.name%> now only has <%= @game.active_player.hp %> Hit Points</p>
 
 <a href="/play">Back</a>
+<% else %>
+<p><%= @game.active_player.name %> loses</p>
+<% end %>

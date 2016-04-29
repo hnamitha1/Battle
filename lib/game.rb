@@ -6,7 +6,15 @@ class Game
 		@player2 = player2
 		@active_player = @player1
 	end
+  
+  def self.create(player1,player2)
+  	@game = Game.new(player1,player2)
+  end
 
+  def self.instance
+  	@game
+  end
+  
 	def attack opponent
     opponent.receive_damage
   end

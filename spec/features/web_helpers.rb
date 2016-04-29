@@ -62,11 +62,4 @@ def attack_player
         click_button('Scratch')
         click_link('Back')
         click_button('Scratch')
-        
-        
-
-        
-
-
-    
 end

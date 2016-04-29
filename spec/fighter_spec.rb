@@ -13,6 +13,7 @@ describe Fighter do
   end
 
   it "reduces HP when taking damage" do
-    expect{slasher.receive_damage}.to change { slasher.hp }.by(-2)
+     allow(Kernel).to receive(:rand) {5}
+     expect{slasher.receive_damage}.to change { slasher.hp }
   end
 end

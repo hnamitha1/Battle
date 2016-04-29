@@ -9,7 +9,7 @@ class Fighter
   end
 
   def receive_damage
-    @hp -= 2
+    @hp -= Kernel.rand(5)
   end
 
 
